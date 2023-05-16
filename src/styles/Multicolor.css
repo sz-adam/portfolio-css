@@ -1,0 +1,55 @@
+.multicolor {
+    display: flex;
+    justify-content: space-around;
+    padding-top: 20px;
+    cursor: pointer;
+
+
+}
+
+.color-names {
+
+    border: 3px solid rgb(116, 114, 114);
+    padding: 20px 20px;
+    border-radius: 50%;
+}
+
+.color-blue,
+.color-green,
+.color-black,
+.color-white {
+    padding: 15px;
+    border: 2px solid rgb(131, 131, 131);
+    border-radius: 50%;
+}
+
+.color-blue {
+    background-color: #006B7F;
+  
+}
+
+.color-green {
+    background-color: #369090;
+   
+}
+
+.color-black {
+    background-color: #0C1C29;
+}
+
+.color-white {
+    background-color: #FAFFFB;
+  
+}
+@media screen and (max-width: 992px) {
+   .multicolor{
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   } 
+ .theme-sec{
+    margin: 10px 0;
+ }
+}
