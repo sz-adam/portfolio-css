@@ -3,7 +3,7 @@ const theme = {
         bodybackgroundColor: '#0C1C29',
         textColor: '#FAFFFB',
         boxShadow: '0px 0px 5px #3498db',
-        navbarcolor:'#242426'
+        navbarTextcolor:'#FAFFFB'
     
         
     },
@@ -11,21 +11,21 @@ const theme = {
     blue: {
         bodybackgroundColor: '#006B7F',
         textColor: '#FAFFFB',
-        navbarcolor:'#0F3446'
+        navbarTextcolor:'#FAFFFB'
     },
 
     green: {
         bodybackgroundColor: '#369090',
         textColor: '#FAFFFB',
-       
+        navbarTextcolor:'#FAFFFB'
         
         
     },
 
     white: {
         bodybackgroundColor: '#FAFFFB',
-        textColor: '#FAFFFB',
-      
+        textColor: '#242426',
+       
     }
 }
 

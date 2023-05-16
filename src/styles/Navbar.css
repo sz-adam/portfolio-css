@@ -37,6 +37,7 @@
 .nav-item {
   position: relative;
   cursor: pointer;
+
 }
 
 .nav-item::after {
@@ -59,6 +60,7 @@
   color: #f8f8f8;
   text-decoration: none;
   padding: 10px; 
+  
 }
 
 
@@ -88,6 +90,7 @@
 
   .nav-item a {
     font-size: 2rem;
+    color: black;
   }
 
   .hamburger {

@@ -7,7 +7,7 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { selectedTheme } = useContext(ThemeContext)
-  const { navbarcolor, bodybackgroundColor, textColor } = selectedTheme
+  const { navbarcolor, bodybackgroundColor, textColor, navbarTextcolor } = selectedTheme
 
   const handleMenuClick = () => {
     setIsOpen(!isOpen);
@@ -24,16 +24,16 @@ const Navbar = () => {
       </div>
       <ul className={`nav-menu ${isOpen ? "active" : ""}`} style={isOpen ? { backgroundColor: bodybackgroundColor } : {}}>
         <li className="nav-item" onClick={handleLinkClick}>
-          <a style={{ color: textColor }} href="#home" >Főoldal</a>
+          <a style={{ color: navbarTextcolor }} href="#home">Főoldal</a>
         </li>
         <li className="nav-item" onClick={handleLinkClick}>
-          <a style={{ color: textColor }} href="#portfolio">Munkáim</a>
+          <a  style={{ color: navbarTextcolor }} href="#portfolio">Munkáim</a>
         </li>
         <li className="nav-item" onClick={handleLinkClick}>
-          <a style={{ color: textColor }} href="#skills">Készségek</a>
+          <a  style={{ color: navbarTextcolor }} href="#skills">Készségek</a>
         </li>
         <li className="nav-item" onClick={handleLinkClick}>
-          <a style={{ color: textColor }} href="#contact">Kapcsolat</a>
+          <a  style={{ color: navbarTextcolor }} href="#contact">Kapcsolat</a>
         </li>
       </ul>
       <div className="hamburger" onClick={handleMenuClick}>
