@@ -16,7 +16,7 @@ const theme = {
 
     green: {
         bodybackgroundColor: '#369090',
-        textColor: '#0C1C29',
+        textColor: '#FAFFFB',
        
         
         
@@ -24,7 +24,7 @@ const theme = {
 
     white: {
         bodybackgroundColor: '#FAFFFB',
-        textColor: '#0C1C29',
+        textColor: '#FAFFFB',
       
     }
 }
