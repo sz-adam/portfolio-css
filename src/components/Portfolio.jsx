@@ -32,16 +32,7 @@ const Portfolio = () => {
             src: cssTodo,
             title: "Ez egy film adatbázis ami az OMDB apit használja. Tartalmai között lehet keresni,bővebb információkat megnézni , és kedvencek közé ellehet menteni. "
         },
-        {
-            id: 4,
-            src: jsTodo,
-            title: "Ez egy JavaScript projektem"
-        },
-        {
-            id: 5,
-            src: htmlTodo,
-            title: "Ez egy HTML alkalmazás"
-        },
+      
     ]
 
     return (
