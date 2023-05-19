@@ -31,7 +31,7 @@ const Contact = () => {
   return (
     <div id="contact" >
   <div className="contact-header">
-    <h2>Kérlek vedd fel velem a kapcsolatot</h2>
+  <h2>Kérlek lépj velem kapcsolatba</h2>
 
   </div>
 
@@ -51,14 +51,14 @@ const Contact = () => {
     </div>
 
     <div className="contact-form">
-      <form onSubmit={sendEmail} ref={form}>
-        <input type="text" name="from_name" placeholder="Adja meg a nevét" />
-        <input type="email" name="from_email" placeholder="Adja meg az email címét" />
-        <textarea name="message" placeholder="Írja be az üzenetet..." rows="10"></textarea>
-        
-        <button type="submit" value="Send" >Küldés</button>
-      </form>
-    </div>
+  <form onSubmit={sendEmail} ref={form}>
+    <input type="text" name="from_name" placeholder="Add meg a neved..." />
+    <input type="email" name="from_email" placeholder="Add meg az email címed..." />
+    <textarea name="message" placeholder="Írd be az üzenetet..." rows="10"></textarea>
+    
+    <button type="submit" value="Send">Küldés</button>
+  </form>
+</div>
   </div>
 </div>
   );

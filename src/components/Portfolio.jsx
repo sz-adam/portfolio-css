@@ -2,8 +2,6 @@ import React from 'react'
 
 
 import cssTodo from "../images/css.png"
-import jsTodo from "../images/js.png"
-import htmlTodo from "../images/html.png"
 import '../styles/Portfolio.css'
 import memorygame from "../images/memorygame.jpg"
 import angularTodo from "../images/angular-todo.jpg"

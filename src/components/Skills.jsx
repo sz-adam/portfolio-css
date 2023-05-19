@@ -9,41 +9,47 @@ import scss from '../images/scss.png';
 import tailwind from '../images/tailwind.png';
 import '../styles/Skills.css';
 
+import { useContext } from 'react';
+
+import { ThemeContext } from '../context/ThemeContext';
+
 const Skills = () => {
+  const { selectedTheme } = useContext(ThemeContext)
+  const { boxShadow } = selectedTheme
   const tech = [
     {
       id: 1,
       src: html,
       title: 'Html',
-      count: 80,
+      
 
     },
     {
       id: 2,
       src: css,
       title: 'Css',
-      count: 80,
+      
 
     },
     {
       id: 3,
       src: js,
       title: 'Js',
-      count: 70,
+      
 
     },
     {
       id: 4,
       src: nodejs,
       title: 'Nodejs',
-      count: 40,
+      
 
     },
     {
       id: 5,
       src: react,
       title: 'React',
-      count: 70,
+      
 
     },
 
@@ -51,21 +57,21 @@ const Skills = () => {
       id: 6,
       src: scss,
       title: 'Scss',
-      count: 70,
+      
 
     },
     {
       id: 7,
       src: tailwind,
       title: 'Tailwind',
-      count: 30,
+      
 
     },
     {
       id: 8,
       src: angular,
       title: 'Angular',
-      count: 50,
+      
 
     },
   ];
@@ -79,11 +85,10 @@ const Skills = () => {
       <div className="skills-list">
         {tech.map((skill) => (
           <div key={skill.id} className="skill-item">
-            <div className='skills-color'
-              style={{ '--percentage': skill.count + '%' }}>
+        
 
 
-              <div className="skill-image">
+              <div className='skill-images' style={{ boxShadow: boxShadow }}>
                 <img
                   src={skill.src}
                   alt={skill.title}
@@ -91,7 +96,7 @@ const Skills = () => {
                 />
               
               </div>
-            </div>
+            
             <p className="skill-title" >
               {skill.title}
             </p>

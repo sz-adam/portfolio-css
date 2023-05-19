@@ -30,19 +30,24 @@ margin: 10px;
   border-radius: 5px;
   position: relative;
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 
 }
 
 .portfolio-image {
-  width: 100%;
-  height: 100%;
+  width: 80%;
+  height: 80%;
   object-fit: cover;
   transition: transform 0.3s ease-in-out;
   border-radius: 10px;
+ 
 }
 
 .portfolio-item:hover .portfolio-image {
-  transform: scale(1.1);
+  transform: scale(1.3);
 }
 
 
@@ -62,6 +67,7 @@ margin: 10px;
   align-items: center;
   text-align: center;
   border-radius: 10px;
+  
  
 }
 
@@ -73,6 +79,7 @@ margin: 10px;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 5px;
+  margin: 10px;
 }
 
 .portfolio-buttons {
