@@ -35,8 +35,8 @@ const Portfolio = () => {
         id: 4,
             src: angularpokemon,            
             title: "Ez egy pokemon alkalmazás ,20 db pokemont listáz ki, a tipusaira külön lehet szűrni és egy felugró ablak segítségével még több adatot jelenít meg az adott pokemonról.",
-            link: "https://sz-adam.github.io/pages-pokemon/",
-            demo:"https://sz-adam.github.io/pokemon-pages/"
+            link: "https://github.com/sz-adam/angular-pokemon",
+            demo:"https://sz-adam.github.io/pages-pokemon/"
     },
       
     ]
