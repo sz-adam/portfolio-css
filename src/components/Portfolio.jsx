@@ -5,6 +5,7 @@ import cssTodo from "../images/css.png"
 import '../styles/Portfolio.css'
 import memorygame from "../images/memorygame.jpg"
 import angularTodo from "../images/angular-todo.jpg"
+import angularpokemon from "../images/pokemon.png"
 
 const Portfolio = () => {
 
@@ -30,6 +31,13 @@ const Portfolio = () => {
             src: cssTodo,
             title: "Ez egy film adatbázis ami az OMDB apit használja. Tartalmai között lehet keresni,bővebb információkat megnézni , és kedvencek közé ellehet menteni. "
         },
+        {
+        id: 4,
+            src: angularpokemon,            
+            title: "Ez egy pokemon alkalmazás ,20 db pokemont listáz ki, a tipusaira külön lehet szűrni és egy felugró ablak segítségével még több adatot jelenít meg az adott pokemonról.",
+            link: "https://github.com/sz-adam/angular-pokemon",
+            demo:"https://sz-adam.github.io/pokemon-pages/"
+    },
       
     ]
 
