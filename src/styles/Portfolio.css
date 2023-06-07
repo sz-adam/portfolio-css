@@ -57,7 +57,7 @@ margin: 10px;
   left: 0;
   top: 0;
   width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
+  background-color: rgba(0, 0, 0, 0.5);
   color: #fff;
   transition: opacity 0.4s ease-in-out;
   opacity: 0;
