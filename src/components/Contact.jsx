@@ -64,7 +64,7 @@ const Contact = () => {
             <a><AiOutlineMail /> <span>szaboadam255@gmail.com</span> </a>
           </div>
           <div className="social-link">
-            <a href="/" style={{ color: textColor }}><BsLinkedin /><span>linkedin</span> </a>
+            <a href="https://www.linkedin.com/in/%C3%A1d%C3%A1m-szab%C3%B3-06733527a/" style={{ color: textColor }}><BsLinkedin /><span>linkedin</span> </a>
           </div>
 
         </div>
