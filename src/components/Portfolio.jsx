@@ -1,11 +1,12 @@
 import React from 'react'
 
 
-import cssTodo from "../images/css.png"
+
 import '../styles/Portfolio.css'
 import memorygame from "../images/memorygame.jpg"
 import angularTodo from "../images/angular-todo.jpg"
 import angularpokemon from "../images/pokemon.png"
+import quiz from"../images/quiz.png"
 
 const Portfolio = () => {
 
@@ -21,16 +22,20 @@ const Portfolio = () => {
         },
         {
             id: 2,
+            src: quiz,
+            title: "Ez egy Quiz játék opentdb api használatával. A kérdések végén a helyes és helytelen válaszokat megjeleníti.",
+            link:"https://github.com/sz-adam/react-quiz",
+            demo:"https://sz-adam.github.io/react-quiz-pages/"
+        
+        },
+        {
+            id: 3,
             src: angularTodo,
             title: "Ez egy Angular alapú TODO-List amihez PrimeNG-t használtam.",
             link: "https://github.com/sz-adam/Todo-list-angular-PrimeNg-",
             demo:"https://sz-adam.github.io/angular-todo-pages/"
         },
-        {
-            id: 3,
-            src: cssTodo,
-            title: "Ez egy film adatbázis ami az OMDB apit használja. Tartalmai között lehet keresni,bővebb információkat megnézni , és kedvencek közé ellehet menteni. "
-        },
+       
         {
         id: 4,
             src: angularpokemon,            
