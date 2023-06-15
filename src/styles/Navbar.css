@@ -26,6 +26,15 @@
     transform: scale(1.2);
   }
 }
+.flag img, .flag-mobile img{
+  padding: 0 5px;
+  cursor: pointer;
+}
+
+.flag-mobile {
+  display: none;
+}
+
 
 .nav-menu {
   display: flex;
@@ -69,6 +78,16 @@
 }
 
 @media (max-width: 768px) {
+  .flag{
+    display: none;
+  }
+  
+.flag-mobile{
+  display: block;
+}
+
+
+
 
   .nav-menu {
     display: none;
@@ -81,6 +100,7 @@
 
   }
 
+ 
   .nav-item {
     justify-content: center;
     text-align: center;

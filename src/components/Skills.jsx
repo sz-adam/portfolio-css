@@ -8,14 +8,17 @@ import react from '../images/react.png';
 import scss from '../images/scss.png';
 import tailwind from '../images/tailwind.png';
 import '../styles/Skills.css';
-
 import { useContext } from 'react';
-
 import { ThemeContext } from '../context/ThemeContext';
+import { LanguageContext } from '../context/LanguageContext';
+const i18n = require('../utils/i18n')
+
+
 
 const Skills = () => {
   const { selectedTheme } = useContext(ThemeContext)
   const { boxShadow } = selectedTheme
+  const { language, setLanguage } = useContext(LanguageContext)
   const tech = [
     {
       id: 1,
@@ -79,7 +82,7 @@ const Skills = () => {
   return (
     <div id="skills" className="skills-container">
       <div className="skills-heading">
-        <p className="skills-title">Ezeket a technológiákat ismerem</p>
+        <p className="skills-title">{i18n.text(language, i18n.MAP['skills-title'])}</p>
         
       </div>
       <div className="skills-list">

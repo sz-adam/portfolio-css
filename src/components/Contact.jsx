@@ -7,14 +7,22 @@ import emailjs from '@emailjs/browser';
 import "../styles/Contact.css"
 import { useContext, useState } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
+import { LanguageContext } from "../context/LanguageContext";
 
-const Contact = () => {
+const i18n = require('../utils/i18n')
+
+
+const Contact = (props) => {
   const { selectedTheme } = useContext(ThemeContext);
+  const { language, setLanguage } = useContext(LanguageContext)
   const { textColor } = selectedTheme;
   const form = useRef();
   const [data, setData] = useState({ name: '', email: '', message: '' });
-
   const [success, setSuccess] = useState(false);
+
+
+
+
 
   const handleChange = e => {
     setData({ ...data, [e.target.name]: e.target.value });
@@ -50,7 +58,8 @@ const Contact = () => {
   return (
     <div id="contact" >
       <div className="contact-header">
-        <h2>Kérlek lépj velem kapcsolatba</h2>
+        <h2>{i18n.text(language, i18n.MAP['contact-contact'])}</h2>
+    
 
       </div>
 
@@ -61,7 +70,7 @@ const Contact = () => {
 
           </div>
           <div className="social-link">
-            <a><AiOutlineMail /> <span>szaboadam255@gmail.com</span> </a>
+            <a><AiOutlineMail /> <span>szaboadam255@gmail.com </span> </a>
           </div>
           <div className="social-link">
             <a href="https://www.linkedin.com/in/%C3%A1d%C3%A1m-szab%C3%B3-06733527a/" style={{ color: textColor }}><BsLinkedin /><span>linkedin</span> </a>
@@ -72,13 +81,13 @@ const Contact = () => {
 
           <form onSubmit={sendEmail} ref={form}>
             <div className='error-succes'>
-              {success && <div className="success">Az üzenetet sikeresen elküldtük!</div>}
+              {success && <div className="success">{i18n.text(language, i18n.MAP['contact-succes'])}</div>}
             </div>
-            <input type="text" value={data.name} onChange={handleChange} placeholder="Add meg a neved..." required id="name" name="name" />
-            <input type="email" value={data.email} onChange={handleChange} placeholder="Add meg az email címed..." required name="email" id="email" />
-            <textarea name="message" value={data.message} onChange={handleChange} placeholder="Írd be az üzenetet..." rows="10" id="message" required></textarea>
+            <input type="text" value={data.name} onChange={handleChange} placeholder={i18n.text(language, i18n.MAP['contact-name'])} required id="name" name="name" />
+            <input type="email" value={data.email} onChange={handleChange} placeholder={i18n.text(language, i18n.MAP['contact-email'])} required name="email" id="email" />
+            <textarea name="message" value={data.message} onChange={handleChange} placeholder={i18n.text(language, i18n.MAP['contact-textarea'])} rows="10" id="message" required></textarea>
 
-            <button type="submit" value="Send">Küldés</button>
+            <button type="submit" value="Send">{i18n.text(language, i18n.MAP['contact-sending'])}</button>
           </form>
         </div>
       </div>

@@ -1,56 +1,58 @@
-import React from 'react'
-
-
-
+import React, { useContext } from 'react'
 import '../styles/Portfolio.css'
 import memorygame from "../images/memorygame.jpg"
 import angularTodo from "../images/angular-todo.jpg"
 import angularpokemon from "../images/pokemon.png"
-import quiz from"../images/quiz.png"
+import quiz from "../images/quiz.png"
+import { LanguageContext } from '../context/LanguageContext'
+
+import { FiGithub } from "react-icons/fi"
+import { AiOutlineEye } from "react-icons/ai"
+const i18n = require('../utils/i18n')
 
 const Portfolio = () => {
-
+    const { language, setLanguage } = useContext(LanguageContext)
 
 
     const portfolios = [
         {
             id: 1,
             src: memorygame,
-            title: "Ez egy egyszerű memória játék. 18 képből választ véletlenszerűen hat darabot a játékhoz.",
+            title: i18n.text(language, i18n.MAP['portfolio-memorygame']),
             link: "https://github.com/sz-adam/react-memorygame-tailwindcss",
-            demo:"https://sz-adam.github.io/memory-pages/"
+            demo: "https://sz-adam.github.io/memory-pages/"
         },
         {
             id: 2,
             src: quiz,
-            title: "Ez egy Quiz játék opentdb api használatával. A kérdések végén a helyes és helytelen válaszokat megjeleníti.",
-            link:"https://github.com/sz-adam/react-quiz",
-            demo:"https://sz-adam.github.io/react-quiz-pages/"
-        
+            title: i18n.text(language, i18n.MAP['portfolio-quiz']),
+            link: "https://github.com/sz-adam/react-quiz",
+            demo: "https://sz-adam.github.io/react-quiz-pages/"
+
         },
         {
             id: 3,
             src: angularTodo,
-            title: "Ez egy Angular alapú TODO-List amihez PrimeNG-t használtam.",
+            title: i18n.text(language, i18n.MAP['portfolio-angularTodo']),
             link: "https://github.com/sz-adam/Todo-list-angular-PrimeNg-",
-            demo:"https://sz-adam.github.io/angular-todo-pages/"
+            demo: "https://sz-adam.github.io/angular-todo-pages/"
         },
-       
+
         {
-        id: 4,
-            src: angularpokemon,            
-            title: "Ez egy pokemon alkalmazás ,20 db pokemont listáz ki, a tipusaira külön lehet szűrni és egy felugró ablak segítségével még több adatot jelenít meg az adott pokemonról.",
+            id: 4,
+            src: angularpokemon,
+            title: i18n.text(language, i18n.MAP['portfolio-angularPokemon']),
             link: "https://github.com/sz-adam/angular-pokemon",
-            demo:"https://sz-adam.github.io/pages-pokemon/"
-    },
-      
+            demo: "https://sz-adam.github.io/pages-pokemon/"
+        },
+
     ]
 
     return (
         <div id='portfolio' className='portfolio-container'>
             <div className='portfolio-header'>
-                <p className='portfolio-title'>Nézd meg a munkáimat</p>
-              
+                <p className='portfolio-title'>{i18n.text(language, i18n.MAP['portfolio-title'])}</p>
+
             </div>
 
             <div className='portfolio-items'>
@@ -61,8 +63,8 @@ const Portfolio = () => {
                             <p className='portfolio-titles'>{portfolio.title}</p>
 
                             <div className='portfolio-buttons'>
-                                <a href={portfolio.demo}><button className='portfolio-demo-button'>Demo</button></a>
-                                <a href={portfolio.link}><button className='portfolio-code-button'>Code</button></a>
+                                <a href={portfolio.demo}><button className='portfolio-demo-button'><AiOutlineEye size={25}/></button></a>
+                                <a href={portfolio.link}><button className='portfolio-code-button'><FiGithub size={25}/></button></a>
 
                             </div>
                         </div>
@@ -74,4 +76,3 @@ const Portfolio = () => {
 }
 
 export default Portfolio
-

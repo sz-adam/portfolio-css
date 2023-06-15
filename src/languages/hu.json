@@ -1,0 +1,35 @@
+{
+  
+    "code":"hu",
+    "navbar-contact":"Kapcsolat",
+    "navbar-home":"Főoldal",
+    "navbar-portfolio":"Munkáim",
+    "navbar-skills":"Készségek",
+
+
+    "home-name":"Szia Szabó Ádámnak hívnak",
+    "home-junior":" és egy Junior FrontEnd fejlesztő vagyok",
+    "home-about":"A programozás világa mindig is vonzott, és szakmai fejlődésem érdekében nemcsak autodidakta módon tanultam, hanem 2022-ben beiratkoztam egy bootcampre is. Azóta sikerült megtalálnom azt a területet, amely különösen izgalmasnak és kihívásokkal telinek tűnik számomra. Szeretem az új technológiákat, és mindig nyitott vagyok az újabb lehetőségekre, melyek további fejlődést jelentenek számomra. Azon fáradozom, hogy folyamatosan bővítsem és mélyítsem szakmai tudásomat, valamint fejlesszem a készségeimet, hogy még eredményesebben és hatékonyabban tudjak dolgozni a területen.",
+    "home-cv":"Töltsd le a CV-t",
+    "home-portfolio":"Munkáim",
+
+    "portfolio-memorygame":"Ez egy egyszerű memória játék. 18 képből választ véletlenszerűen hat darabot a játékhoz.",
+    "portfolio-quiz":"Ez egy Quiz játék opentdb api használatával. A kérdések végén a helyes és helytelen válaszokat megjeleníti.",
+    "portfolio-angularTodo": "Ez egy Angular alapú TODO-List amihez PrimeNG-t használtam.",
+    "portfolio-angularPokemon": "Ez egy pokemon alkalmazás, 20 db pokemont listáz ki, a típusaira külön lehet szűrni és egy felugró ablak segítségével még több adatot jelenít meg az adott pokemonról.",
+    "portfolio-title":"Nézd meg a munkáimat.",
+
+    "skills-title":"Ezeket a technológiákat ismerem.",
+
+    "contact-contact":"Vedd fel velem a kapcsolatot ",
+    "contact-name":"Add meg a neved...",
+    "contact-email":"Add meg az email címed...",
+    "contact-textarea":"Írd be az üzenetet...",
+    "contact-sending":"Küldés",
+    "contact-succes":"Az üzenetet sikeresen elküldtük!",
+
+    "loading-loading":"Betöltés"
+
+    
+
+}

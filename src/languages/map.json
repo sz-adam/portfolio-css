@@ -1,0 +1,33 @@
+{
+    "code": "code",
+    "navbar-contact":"navbar-contact",
+    "navbar-home":"navbar-home",
+    "navbar-portfolio":"navbar-portfolio",
+    "navbar-skills":"navbar-skills",
+
+    "home-name":"home-name",
+    "home-junior":"home-junior",
+    "home-about":    "home-about",
+    "home-cv":"home-cv",
+    "home-portfolio":"home-portfolio",
+
+    "portfolio-memorygame":"portfolio-memorygame",
+    "portfolio-quiz":"portfolio-quiz",
+    "portfolio-angularTodo":"portfolio-angularTodo",
+    "portfolio-angularPokemon":  "portfolio-angularPokemon",
+    "portfolio-title":"portfolio-title",
+
+
+    "skills-title": "skills-title",
+
+
+    "contact-contact":"contact-contact",
+    "contact-name": "contact-name",
+    "contact-email":  "contact-email",
+    "contact-textarea":"contact-textarea",
+    "contact-sending":"contact-sending",
+    "contact-succes":"contact-succes",
+
+    "loading-loading":"loading-loading"
+
+}
