@@ -3,15 +3,13 @@ import { FaBars, FaTimes } from 'react-icons/fa'
 import { ThemeContext } from '../context/ThemeContext';
 import '../styles/Navbar.css'
 import { LanguageContext } from '../context/LanguageContext'
-import enflag from '../images/flag/uk-flag.gif'
-import huflag from '../images/flag/hu-flag.gif'
-import gmflag from '../images/flag/gm-flag.gif'
+import Flag from './Flag'
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
 
   const { selectedTheme } = useContext(ThemeContext)
-  const { navbarcolor, bodybackgroundColor, textColor, navbarTextcolor } = selectedTheme
+  const { navbarcolor, bodybackgroundColor, navbarTextcolor } = selectedTheme
   const { language, setLanguage } = useContext(LanguageContext)
 
   const i18n = require('../utils/i18n')
@@ -32,43 +30,13 @@ const Navbar = () => {
       </div>
 
       <div className='flag'>
-        <img src={enflag} alt=""
-          onClick={() => { setLanguage('en') }}
-          width={40}
-          height={25}
-        />
-        <img src={huflag} alt=""
-          onClick={() => { setLanguage('hu') }}
-          width={40}
-          height={25}
-        />
-        <img src={gmflag} alt=""
-          onClick={() => { setLanguage('de') }}
-          width={40}
-          height={25}
-        />
+        <Flag />
       </div>
 
 
       <ul className={`nav-menu ${isOpen ? "active" : ""}`} style={isOpen ? { backgroundColor: bodybackgroundColor } : {}}>
-        <li className="flag-mobile">
-
-          <img src={enflag} alt=""
-            onClick={() => { setLanguage('en') }}
-            width={40}
-            height={25}
-          />
-          <img src={huflag} alt=""
-            onClick={() => { setLanguage('hu') }}
-            width={40}
-            height={25}
-          />
-          <img src={gmflag} alt=""
-            onClick={() => { setLanguage('de') }}
-            width={40}
-            height={25}
-          />
-
+        <li className="flag-mobile">          
+            <Flag />
         </li>
 
         <li className="nav-item" onClick={handleLinkClick}>
