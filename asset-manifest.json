@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-css/static/css/main.4529df1d.css",
-    "main.js": "/portfolio-css/static/js/main.f49fff43.js",
+    "main.js": "/portfolio-css/static/js/main.45e268e9.js",
     "static/media/Önéletrajz.pdf": "/portfolio-css/static/media/Önéletrajz.a9d14983c060ff7f41cf.pdf",
     "static/media/me4.png": "/portfolio-css/static/media/me4.24559cc9c89c4c1b3596.png",
     "static/media/pokemon.png": "/portfolio-css/static/media/pokemon.407d041c50d9021ee968.png",
@@ -17,10 +17,10 @@
     "static/media/tailwind.png": "/portfolio-css/static/media/tailwind.99e0b6fdb08924dd678c.png",
     "index.html": "/portfolio-css/index.html",
     "main.4529df1d.css.map": "/portfolio-css/static/css/main.4529df1d.css.map",
-    "main.f49fff43.js.map": "/portfolio-css/static/js/main.f49fff43.js.map"
+    "main.45e268e9.js.map": "/portfolio-css/static/js/main.45e268e9.js.map"
   },
   "entrypoints": [
     "static/css/main.4529df1d.css",
-    "static/js/main.f49fff43.js"
+    "static/js/main.45e268e9.js"
   ]
 }
