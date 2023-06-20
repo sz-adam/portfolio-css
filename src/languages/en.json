@@ -13,6 +13,7 @@
 
     "portfolio-memorygame":"This is a simple memory game. It randomly selects six out of eighteen images for the game.",
     "portfolio-quiz":"This is a Quiz game using opentdb api. At the end of the questions, it displays the correct and incorrect answers.",
+    "portfolio-movie":"Movies/TV shows can be searched using the OMDB API. They can be saved to favorites. More information is displayed in a modal window.",
     "portfolio-angularTodo":"This is an Angular-based TODO-List for which I used PrimeNG.",
     "portfolio-angularPokemon":"This is a pokemon application, it lists 20 pokemons, you can filter them separately by type, and with the help of a pop-up window, it displays even more data about the given pokemon.",
     "portfolio-title":"Check out my works.",

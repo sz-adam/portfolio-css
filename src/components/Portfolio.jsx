@@ -4,6 +4,7 @@ import memorygame from "../images/memorygame.jpg"
 import angularTodo from "../images/angular-todo.jpg"
 import angularpokemon from "../images/pokemon.png"
 import quiz from "../images/quiz.png"
+import movie from "../images/movie.png"
 import { LanguageContext } from '../context/LanguageContext'
 
 import { FiGithub } from "react-icons/fi"
@@ -30,8 +31,17 @@ const Portfolio = () => {
             demo: "https://sz-adam.github.io/react-quiz-pages/"
 
         },
+
         {
             id: 3,
+            src: movie,
+            title: i18n.text(language, i18n.MAP['portfolio-movie']),
+            link: "https://github.com/sz-adam/react-movie-2.0",
+            demo: "https://sz-adam.github.io/movie-2.0-pages/"
+
+        },
+        {
+            id: 4,
             src: angularTodo,
             title: i18n.text(language, i18n.MAP['portfolio-angularTodo']),
             link: "https://github.com/sz-adam/Todo-list-angular-PrimeNg-",
@@ -39,7 +49,7 @@ const Portfolio = () => {
         },
 
         {
-            id: 4,
+            id: 5,
             src: angularpokemon,
             title: i18n.text(language, i18n.MAP['portfolio-angularPokemon']),
             link: "https://github.com/sz-adam/angular-pokemon",

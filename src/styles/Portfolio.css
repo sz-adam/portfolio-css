@@ -104,6 +104,11 @@ margin: 10px;
   background-color: #28a745;
 }
 
+.portfolio-demo-button:hover,
+.portfolio-code-button:hover{
+  background-color: #da732f;
+}
+
 @media (max-width: 768px) {
   .portfolio-image {
     width: 100%;
