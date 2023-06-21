@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/portfolio-css/static/css/main.7cb907ec.css",
-    "main.js": "/portfolio-css/static/js/main.fa4baa32.js",
+    "main.css": "/portfolio-css/static/css/main.c778ebeb.css",
+    "main.js": "/portfolio-css/static/js/main.31b8457e.js",
     "static/media/movie.png": "/portfolio-css/static/media/movie.11d16bf9e41a6b466911.png",
     "static/media/Önéletrajz.pdf": "/portfolio-css/static/media/Önéletrajz.a9d14983c060ff7f41cf.pdf",
     "static/media/me4.png": "/portfolio-css/static/media/me4.24559cc9c89c4c1b3596.png",
@@ -17,11 +17,11 @@
     "static/media/html.png": "/portfolio-css/static/media/html.33745eadd572612bdf11.png",
     "static/media/tailwind.png": "/portfolio-css/static/media/tailwind.99e0b6fdb08924dd678c.png",
     "index.html": "/portfolio-css/index.html",
-    "main.7cb907ec.css.map": "/portfolio-css/static/css/main.7cb907ec.css.map",
-    "main.fa4baa32.js.map": "/portfolio-css/static/js/main.fa4baa32.js.map"
+    "main.c778ebeb.css.map": "/portfolio-css/static/css/main.c778ebeb.css.map",
+    "main.31b8457e.js.map": "/portfolio-css/static/js/main.31b8457e.js.map"
   },
   "entrypoints": [
-    "static/css/main.7cb907ec.css",
-    "static/js/main.fa4baa32.js"
+    "static/css/main.c778ebeb.css",
+    "static/js/main.31b8457e.js"
   ]
 }
