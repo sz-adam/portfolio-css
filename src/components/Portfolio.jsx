@@ -61,7 +61,7 @@ const Portfolio = () => {
     return (
         <div id='portfolio' className='portfolio-container'>
             <div className='portfolio-header'>
-                <p className='portfolio-title'>{i18n.text(language, i18n.MAP['portfolio-title'])}</p>
+                <p >{i18n.text(language, i18n.MAP['portfolio-title'])}</p>
 
             </div>
 
@@ -69,9 +69,9 @@ const Portfolio = () => {
                 {portfolios.map((portfolio) => (
                     <div key={portfolio.id} className='portfolio-item'>
                         <img className='portfolio-image' src={portfolio.src} alt={portfolio.title} />
-                        <div className='title'>
-                            <p className='portfolio-titles'>{portfolio.title}</p>
-
+                       
+                        <div className='portfolio-titles'>           
+                            <p className='portfolio-text'>{portfolio.title}</p>
                             <div className='portfolio-buttons'>
                                 <a href={portfolio.demo}><button className='portfolio-demo-button'><AiOutlineEye size={25}/></button></a>
                                 <a href={portfolio.link}><button className='portfolio-code-button'><FiGithub size={25}/></button></a>

@@ -87,7 +87,7 @@ const Contact = (props) => {
             <input type="email" value={data.email} onChange={handleChange} placeholder={i18n.text(language, i18n.MAP['contact-email'])} required name="email" id="email" />
             <textarea name="message" value={data.message} onChange={handleChange} placeholder={i18n.text(language, i18n.MAP['contact-textarea'])} rows="10" id="message" required></textarea>
 
-            <button type="submit" value="Send">{i18n.text(language, i18n.MAP['contact-sending'])}</button>
+            <button className="contact-button" type="submit" value="Send">{i18n.text(language, i18n.MAP['contact-sending'])}</button>
           </form>
         </div>
       </div>

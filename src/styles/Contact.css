@@ -97,7 +97,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.contact-button:hover {
   background-color: #285d96;
 }
 
