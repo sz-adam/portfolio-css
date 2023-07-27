@@ -1,8 +1,11 @@
 .portfolio-container {
   display: flex;
   flex-direction: column;
+  justify-content: center;
   align-items: center;
   padding: 20px;
+  height: 100vh;
+
 }
 
 .portfolio-header {
@@ -19,7 +22,7 @@
 }
 
 .portfolio-item { 
-  height: 450px;
+  height: 350px;
   overflow: hidden;
   position: relative;
   width: 500px; 
@@ -81,7 +84,11 @@
 padding: 10px 40px;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1600px)
+ {
+  .portfolio-container {
+    height: 100%;
+  }
   .portfolio-items {
     grid-template-columns: repeat(2,1fr);  
   }

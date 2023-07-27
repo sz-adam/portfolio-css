@@ -59,8 +59,8 @@ const Portfolio = () => {
     ]
 
     return (
-        <div id='portfolio' className='portfolio-container'>
-            <div className='portfolio-header'>
+        <div id="portfolio" className='portfolio-container'>
+            <div className='portfolio-header' id="portfolio">
                 <p >{i18n.text(language, i18n.MAP['portfolio-title'])}</p>
 
             </div>

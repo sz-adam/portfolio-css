@@ -22,11 +22,7 @@ const theme = {
         
     },
 
-    white: {
-        bodybackgroundColor: '#FAFFFB',
-        textColor: '#242426',
-       
-    }
+
 }
 
 export default theme;

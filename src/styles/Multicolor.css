@@ -1,11 +1,4 @@
-.multicolor {
-    display: flex;
-    justify-content: space-around;
-    padding-top: 20px;
-    cursor: pointer;
 
-
-}
 
 .color-names {
 
@@ -45,7 +38,7 @@
    .multicolor{
   
     display: flex;
-    flex-direction: column;
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
    } 

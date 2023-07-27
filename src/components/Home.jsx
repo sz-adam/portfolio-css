@@ -24,22 +24,20 @@ const Home = () => {
                     <h3> {i18n.text(language, i18n.MAP['home-junior'])}</h3>
                     <p>{i18n.text(language, i18n.MAP['home-about'])}
                     </p>
-
                     <div className='home-button'>
                         <a href="#portfolio" className='home-a' >
-                        {i18n.text(language, i18n.MAP['home-portfolio'])}
+                            {i18n.text(language, i18n.MAP['home-portfolio'])}
                             <span><RiArrowRightSLine size={25} /></span>
                         </a>
                         <a href={oneletrajz} download className='home-a'>
-                        {i18n.text(language, i18n.MAP['home-cv'])}
+                            {i18n.text(language, i18n.MAP['home-cv'])}
                             <span><RiArrowRightSLine size={25} /></span>
                         </a>
                     </div>
                 </div>
                 <div className='image-color'>
-                 
                     <div className='home-image'>
-                        <img src={Me4}  alt="my portfolio" style={{ boxShadow: boxShadow }} />
+                        <img src={Me4} alt="my portfolio" style={{ boxShadow: boxShadow }} />
                     </div>
                     <div className="color-mode">
                         <MultiColor />

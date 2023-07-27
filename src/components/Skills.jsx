@@ -24,35 +24,35 @@ const Skills = () => {
       id: 1,
       src: html,
       title: 'Html',
-      
+
 
     },
     {
       id: 2,
       src: css,
       title: 'Css',
-      
+
 
     },
     {
       id: 3,
       src: js,
       title: 'Js',
-      
+
 
     },
     {
       id: 4,
       src: nodejs,
       title: 'Nodejs',
-      
+
 
     },
     {
       id: 5,
       src: react,
       title: 'React',
-      
+
 
     },
 
@@ -60,35 +60,36 @@ const Skills = () => {
       id: 6,
       src: scss,
       title: 'Scss',
-      
+
 
     },
     {
       id: 7,
       src: tailwind,
       title: 'Tailwind',
-      
+
 
     },
     {
       id: 8,
       src: angular,
       title: 'Angular',
-      
+
 
     },
   ];
 
   return (
-    <div id="skills" className="skills-container">
-      <div className="skills-heading">
-        <p className="skills-title">{i18n.text(language, i18n.MAP['skills-title'])}</p>
-        
-      </div>
-      <div className="skills-list">
-        {tech.map((skill) => (
-          <div key={skill.id} className="skill-item">
-        
+
+      <div id="skills" className="skills-container">
+        <div className="skills-heading">
+          <p className="skills-title">{i18n.text(language, i18n.MAP['skills-title'])}</p>
+
+        </div>
+        <div className="skills-list">
+          {tech.map((skill) => (
+            <div key={skill.id} className="skill-item">
+
 
 
               <div className='skill-images' style={{ boxShadow: boxShadow }}>
@@ -97,16 +98,17 @@ const Skills = () => {
                   alt={skill.title}
                   className="skill-image"
                 />
-              
+
               </div>
-            
-            <p className="skill-title" >
-              {skill.title}
-            </p>
-          </div>
-        ))}
+
+              <p className="skill-title" >
+                {skill.title}
+              </p>
+            </div>
+          ))}
+        </div>
       </div>
-    </div>
+ 
   );
 };
 

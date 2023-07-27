@@ -11,8 +11,7 @@ const MultiColor = () => {
     const colorOptions = [
         { color: 'black', className: 'color-black' },
         { color: 'blue', className: 'color-blue' },
-        { color: 'green', className: 'color-green' },
-        { color: 'white', className: 'color-white' },
+        { color: 'green', className: 'color-green' },  
       ];
     return (
         <div className="multicolor">

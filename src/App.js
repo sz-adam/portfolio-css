@@ -41,7 +41,7 @@ if (initialized) {
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
       <div style={{ backgroundColor: bodybackgroundColor, color: textColor }}>
-        {loading ? (
+      {loading ? (
           <Loading />
         ) : (
           <>
@@ -51,7 +51,7 @@ if (initialized) {
             <Skills />
             <Contact />
           </>
-        )}
+        )}       
       </div>
     </LanguageContext.Provider>
   );

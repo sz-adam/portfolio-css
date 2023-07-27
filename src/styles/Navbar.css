@@ -1,19 +1,28 @@
+.navbar-container{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+
+}
+
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #333;
   color: #f8f8f8;
-  padding: 0 20px; 
-  
+  padding: 0 20px;
+
 }
 
 .logo {
 
   font-weight: bold;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
- color: #f8f8f8;
- 
+  color: #f8f8f8;
+
   animation: scale 1s infinite alternate;
   font-size: 1.2rem;
 }
@@ -22,11 +31,14 @@
   0% {
     transform: scale(1);
   }
+
   100% {
     transform: scale(1.2);
   }
 }
-.flag img, .flag-mobile img{
+
+.flag img,
+.flag-mobile img {
   padding: 0 5px;
   cursor: pointer;
 }
@@ -39,7 +51,7 @@
 .nav-menu {
   display: flex;
   list-style: none;
-  margin: 0; 
+  margin: 0;
   padding: 0;
 }
 
@@ -68,8 +80,8 @@
 .nav-item a {
   color: #f8f8f8;
   text-decoration: none;
-  padding: 10px; 
-  
+  padding: 10px;
+
 }
 
 
@@ -78,13 +90,13 @@
 }
 
 @media (max-width: 768px) {
-  .flag{
+  .flag {
     display: none;
   }
-  
-.flag-mobile{
-  display: block;
-}
+
+  .flag-mobile {
+    display: block;
+  }
 
 
 
@@ -100,12 +112,12 @@
 
   }
 
- 
+
   .nav-item {
     justify-content: center;
     text-align: center;
-    margin: 8px; 
-    width: 100%; 
+    margin: 8px;
+    width: 100%;
   }
 
   .nav-item a {
@@ -124,9 +136,10 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    
+
   }
-.active .nav-item {
+
+  .active .nav-item {
     margin: 20px;
   }
 }
