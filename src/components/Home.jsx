@@ -7,6 +7,7 @@ import MultiColor from '../MultiColor/MultiColor'
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { LanguageContext } from '../context/LanguageContext'
+import AnimatedMotion from '../framerMotion/AnimatedMotion';
 const i18n = require('../utils/i18n')
 
 
@@ -20,31 +21,35 @@ const Home = () => {
         <div id="home" >
             <div className="home-content">
                 <div className="home-title">
-                    <h1>{i18n.text(language, i18n.MAP['home-name'])} </h1>
-                    <h3> {i18n.text(language, i18n.MAP['home-junior'])}</h3>
-                    <p>{i18n.text(language, i18n.MAP['home-about'])}
-                    </p>
-                    <div className='home-button'>
-                        <a href="#portfolio" className='home-a' >
-                            {i18n.text(language, i18n.MAP['home-portfolio'])}
-                            <span><RiArrowRightSLine size={25} /></span>
-                        </a>
-                        <a href={oneletrajz} download className='home-a'>
-                            {i18n.text(language, i18n.MAP['home-cv'])}
-                            <span><RiArrowRightSLine size={25} /></span>
-                        </a>
-                    </div>
+                    <AnimatedMotion animationName="homeTextAnimation">
+                        <h1>{i18n.text(language, i18n.MAP['home-name'])} </h1>
+                        <h3> {i18n.text(language, i18n.MAP['home-junior'])}</h3>
+                        <p>{i18n.text(language, i18n.MAP['home-about'])}
+                        </p>
+                        <div className='home-button'>
+                            <a href="#portfolio" className='home-a' >
+                                {i18n.text(language, i18n.MAP['home-portfolio'])}
+                                <span><RiArrowRightSLine size={25} /></span>
+                            </a>
+                            <a href={oneletrajz} download className='home-a'>
+                                {i18n.text(language, i18n.MAP['home-cv'])}
+                                <span><RiArrowRightSLine size={25} /></span>
+                            </a>
+                        </div>
+                    </AnimatedMotion>
                 </div>
-                <div className='image-color'>
-                    <div className='home-image'>
-                        <img src={Me4} alt="my portfolio" style={{ boxShadow: boxShadow }} />
+                <AnimatedMotion animationName="homeImageAnimation">
+                    <div className='image-color'>
+                        <div className='home-image'>
+                            <img src={Me4} alt="my portfolio" style={{ boxShadow: boxShadow }} />
+                        </div>
+                        <div className="color-mode">
+                            <MultiColor />
+                        </div>
                     </div>
-                    <div className="color-mode">
-                        <MultiColor />
-                    </div>
-                </div>
+                </AnimatedMotion>
             </div>
-        </div>
+        </div >
 
 
     )
