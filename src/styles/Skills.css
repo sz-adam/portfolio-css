@@ -31,12 +31,9 @@
   border-radius: 20px;
   padding: 5px;
   box-shadow: 5px 5px #383838;
-  transition: transform 0.2s ease
+
 }
 
-.skill-item:hover{
-  transform: scale(1.05);
-}
 
 
 .skill-images{

@@ -26,6 +26,14 @@ const animations ={
         hidden: { opacity: 0,y: -150 },
         visible: { opacity: 1, y: 0 },
       }
+    },
+    skillItemHomeImageAnimation:{
+      whileHover:{
+         scale: 1.05 
+        },
+        transition: {
+          duration: 1, 
+        },
     }
 }
 
@@ -40,6 +48,7 @@ const AnimatedMotion = ({ animationName, children }) => {
         transition={animation.transition}
         variants={animation.variants}
         whileInView={animation.whileInView}
+        whileHover={animation.whileHover}
       >
         {children}
       </motion.div>

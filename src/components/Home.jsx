@@ -41,7 +41,9 @@ const Home = () => {
                 <AnimatedMotion animationName="homeImageAnimation">
                     <div className='image-color'>
                         <div className='home-image'>
+                        <AnimatedMotion animationName="skillItemHomeImageAnimation" >
                             <img src={Me4} alt="my portfolio" style={{ boxShadow: boxShadow }} />
+                            </AnimatedMotion>
                         </div>
                         <div className="color-mode">
                             <MultiColor />
