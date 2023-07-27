@@ -17,7 +17,16 @@ const animations ={
         exit:{pacity: 0, y: -50 },
         transition:{ duration: 1 },
     },
-   
+    skillAnimation: {
+      initial:"hidden",
+      whileInView:"visible",
+      viewport:{ once: true, amount: 1.8 },
+      transition:{ duration: 1 },
+      variants:{
+        hidden: { opacity: 0,y: -150 },
+        visible: { opacity: 1, y: 0 },
+      }
+    }
 }
 
 const AnimatedMotion = ({ animationName, children }) => {  
@@ -29,7 +38,8 @@ const AnimatedMotion = ({ animationName, children }) => {
         animate={animation.animate}
         exit={animation.exit}
         transition={animation.transition}
-    
+        variants={animation.variants}
+        whileInView={animation.whileInView}
       >
         {children}
       </motion.div>

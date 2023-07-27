@@ -11,6 +11,7 @@ import '../styles/Skills.css';
 import { useContext } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { LanguageContext } from '../context/LanguageContext';
+import AnimatedMotion from '../framerMotion/AnimatedMotion';
 const i18n = require('../utils/i18n')
 
 
@@ -88,23 +89,21 @@ const Skills = () => {
         </div>
         <div className="skills-list">
           {tech.map((skill) => (
-            <div key={skill.id} className="skill-item">
-
-
-
+             <AnimatedMotion animationName="skillAnimation"  key={skill.id}> 
+            <div  className="skill-item">
               <div className='skill-images' style={{ boxShadow: boxShadow }}>
                 <img
                   src={skill.src}
                   alt={skill.title}
                   className="skill-image"
                 />
-
               </div>
 
               <p className="skill-title" >
                 {skill.title}
               </p>
             </div>
+            </AnimatedMotion>
           ))}
         </div>
       </div>
