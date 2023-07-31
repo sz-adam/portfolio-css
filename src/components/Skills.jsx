@@ -84,8 +84,9 @@ const Skills = () => {
 
     <div id="skills" className="skills-container" >
       <div className="skills-heading">
-        <p className="skills-title">{i18n.text(language, i18n.MAP['skills-title'])}</p>
-
+        <AnimatedMotion animationName="textAnimation" >      
+          <p className="skills-title">{i18n.text(language, i18n.MAP['skills-title'])}</p>
+        </AnimatedMotion>
       </div>
       <div className="skills-list">
         {tech.map((skill) => (

@@ -21,11 +21,17 @@ const Home = () => {
         <div id="home" >
             <div className="home-content">
                 <div className="home-title">
-                    <AnimatedMotion animationName="homeTextAnimation">
+                    <AnimatedMotion animationName="homeH1Animation">
                         <h1>{i18n.text(language, i18n.MAP['home-name'])} </h1>
+                    </AnimatedMotion>
+                    <AnimatedMotion animationName="homeH3Animation">
                         <h3> {i18n.text(language, i18n.MAP['home-junior'])}</h3>
+                    </AnimatedMotion>
+                    <AnimatedMotion animationName="homePAnimation">
                         <p>{i18n.text(language, i18n.MAP['home-about'])}
                         </p>
+                    </AnimatedMotion>
+                    <AnimatedMotion animationName="homeButtonAnimation">
                         <div className='home-button'>
                             <a href="#portfolio" className='home-a' >
                                 {i18n.text(language, i18n.MAP['home-portfolio'])}
@@ -37,12 +43,13 @@ const Home = () => {
                             </a>
                         </div>
                     </AnimatedMotion>
+
                 </div>
                 <AnimatedMotion animationName="homeImageAnimation">
                     <div className='image-color'>
                         <div className='home-image'>
-                        <AnimatedMotion animationName="ItemAnimation" >
-                            <img src={Me4} alt="my portfolio" style={{ boxShadow: boxShadow }} />
+                            <AnimatedMotion animationName="ItemAnimation" >
+                                <img src={Me4} alt="my portfolio" style={{ boxShadow: boxShadow }} />
                             </AnimatedMotion>
                         </div>
                         <div className="color-mode">

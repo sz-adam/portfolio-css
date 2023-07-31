@@ -1,29 +1,52 @@
-import React, { useEffect, useRef} from 'react';
+import React, { useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const animations = {
-  homeTextAnimation: {
-    initial: { opacity: 0, x: -150 },
-    animate: { opacity: 1, x: 0 },
-    exit: { opacity: 0, y: -50 },
-    transition: { duration: 1 },
-
-
-
-  },
   homeImageAnimation: {
     initial: { opacity: 0, x: 150 },
     animate: { opacity: 1, x: 0 },
     exit: { opacity: 0, y: -50 },
     transition: { duration: 1 },
   },
+  homeH1Animation: {
+    initial: { opacity: 0, x: -150 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, y: -50 },
+    transition: { duration: 1 },
+  },
+  homeH3Animation: {
+    initial: { opacity: 0, x: -150 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, y: -50 },
+    transition: { delay: 1, duration: 1 },
+  },
+
+  homePAnimation: {
+    initial: { opacity: 0, x: -150 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, y: -50 },
+    transition: { delay: 2, duration: 1 },
+  },
+
+  homeButtonAnimation: {
+    initial: { opacity: 0, x: -150 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, y: -50 },
+    transition: { delay: 3, duration: 1 },
+  },
+
+
   skillAnimation: {
     initial: { opacity: 0, y: 150 },
     animate: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: -50 },
-    transition:{duration: 1 },
- 
-  
+    transition: { duration: 1 },
+  },
+  textAnimation: {
+    initial: { opacity: 0, x: -150 },
+    animate: { opacity: 1, x: 0 },
+    exit: { opacity: 0, y: -50 },
+    transition: { duration: 1 },
   },
   ItemAnimation: {
     whileHover: {
