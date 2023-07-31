@@ -9,6 +9,7 @@ import { LanguageContext } from '../context/LanguageContext'
 
 import { FiGithub } from "react-icons/fi"
 import { AiOutlineEye } from "react-icons/ai"
+import AnimatedMotion from '../framerMotion/AnimatedMotion';
 const i18n = require('../utils/i18n')
 
 const Portfolio = () => {
@@ -67,18 +68,22 @@ const Portfolio = () => {
 
             <div className='portfolio-items'>
                 {portfolios.map((portfolio) => (
-                    <div key={portfolio.id} className='portfolio-item'>
-                        <img className='portfolio-image' src={portfolio.src} alt={portfolio.title} />
-                       
-                        <div className='portfolio-titles'>           
-                            <p className='portfolio-text'>{portfolio.title}</p>
-                            <div className='portfolio-buttons'>
-                                <a href={portfolio.demo}><button className='portfolio-demo-button'><AiOutlineEye size={25}/></button></a>
-                                <a href={portfolio.link}><button className='portfolio-code-button'><FiGithub size={25}/></button></a>
+                    <AnimatedMotion animationName="portfolioAnimations" key={portfolio.id}>
+                         <AnimatedMotion animationName="ItemAnimation" >
+                        <div  className='portfolio-item'>
+                            <img className='portfolio-image' src={portfolio.src} alt={portfolio.title} />
 
+                            <div className='portfolio-titles'>
+                                <p className='portfolio-text'>{portfolio.title}</p>
+                                <div className='portfolio-buttons'>
+                                    <a href={portfolio.demo}><button className='portfolio-demo-button'><AiOutlineEye size={25} /></button></a>
+                                    <a href={portfolio.link}><button className='portfolio-code-button'><FiGithub size={25} /></button></a>
+
+                                </div>
                             </div>
                         </div>
-                    </div>
+                        </AnimatedMotion>
+                    </AnimatedMotion>
                 ))}
             </div>
         </div>

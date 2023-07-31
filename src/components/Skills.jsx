@@ -82,36 +82,36 @@ const Skills = () => {
 
   return (
 
-    <div id="skills" className="skills-container">
+    <div id="skills" className="skills-container" >
       <div className="skills-heading">
         <p className="skills-title">{i18n.text(language, i18n.MAP['skills-title'])}</p>
 
       </div>
       <div className="skills-list">
         {tech.map((skill) => (
-          <AnimatedMotion animationName="skillAnimation" key={skill.id}>
-            <AnimatedMotion animationName="skillItemHomeImageAnimation" >
-            <div animationName="skillAnimation" className="skill-item">
+          <AnimatedMotion animationName="skillAnimation" key={skill.id} >
+            <AnimatedMotion animationName="ItemAnimation" >
+              <div className="skill-item">
 
-              <div className='skill-images' style={{ boxShadow: boxShadow }}>
-                <img
-                  src={skill.src}
-                  alt={skill.title}
-                  className="skill-image"
-                />
+                <div className='skill-images' style={{ boxShadow: boxShadow }}>
+                  <img
+                    src={skill.src}
+                    alt={skill.title}
+                    className="skill-image"
+                  />
+                </div>
+
+                <p className="skill-title" >
+                  {skill.title}
+                </p>
+
               </div>
-
-              <p className="skill-title" >
-                {skill.title}
-              </p>
-
-            </div>
-          </AnimatedMotion>
             </AnimatedMotion>
-          ))}
-    </div>
-      </div >
- 
+          </AnimatedMotion>
+        ))}
+      </div>
+    </div >
+
   );
 };
 

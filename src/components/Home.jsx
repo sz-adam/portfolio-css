@@ -41,7 +41,7 @@ const Home = () => {
                 <AnimatedMotion animationName="homeImageAnimation">
                     <div className='image-color'>
                         <div className='home-image'>
-                        <AnimatedMotion animationName="skillItemHomeImageAnimation" >
+                        <AnimatedMotion animationName="ItemAnimation" >
                             <img src={Me4} alt="my portfolio" style={{ boxShadow: boxShadow }} />
                             </AnimatedMotion>
                         </div>
