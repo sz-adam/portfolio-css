@@ -4,10 +4,10 @@ import { motion, useInView } from 'framer-motion';
 const animations = {
   navbarAnimatio:{
     initial: { opacity: 0, y: 15 },
-    animate: { opacity: 1, y: 0 },  
-    exit: { opacity: 0, y: -50 },   
+    animate: { opacity: 1, y: 0 },
+    exit: { opacity: 0, y: -50 },
     transition: { duration: 1 },
-   
+
   },
   homeImageAnimation: {
     initial: { opacity: 0, x: 150 },
@@ -63,24 +63,25 @@ const animations = {
       duration: 1,
     },
   },
-  portfolioAnimations: {
 
-    initial: { opacity: 0, x: 150 },
-    animate: { opacity: 1, x: 0 },
+  portfolioAnimations: {
+    initial: { opacity: 0, scale: 0.8 },
+    animate: { opacity: 1, scale: 1 },
     exit: { opacity: 0, y: -50 },
-    transition: { duration: 1 },
+    transition: { duration: 0.6 },
+
   },
-  contactLinksAnimation:{
+  contactLinksAnimation: {
     initial: { opacity: 0, y: 150 },
     animate: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: -50 },
     transition: { duration: 1 },
   },
-  contactFormAnimation:{
+  contactFormAnimation: {
     initial: { opacity: 0, y: 150 },
     animate: { opacity: 1, y: 0 },
     exit: { opacity: 0, y: -50 },
-    transition: { duration: 3 },
+    transition: { delay: 1, duration: 1 },
   }
 }
 
