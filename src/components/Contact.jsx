@@ -8,6 +8,7 @@ import "../styles/Contact.css"
 import { useContext, useState } from 'react';
 import { ThemeContext } from '../context/ThemeContext';
 import { LanguageContext } from "../context/LanguageContext";
+import AnimatedMotion from '../framerMotion/AnimatedMotion';
 
 const i18n = require('../utils/i18n')
 
@@ -43,7 +44,7 @@ const Contact = (props) => {
         .then((result) => {
           console.log(result.text)
           console.log("massage.sent");
-          setSuccess(true);  
+          setSuccess(true);
           handleResetInput();
           setTimeout(() => {
             setSuccess(false);
@@ -58,12 +59,14 @@ const Contact = (props) => {
   return (
     <div id="contact" >
       <div className="contact-header">
-        <h2>{i18n.text(language, i18n.MAP['contact-contact'])}</h2>
-    
+        <AnimatedMotion animationName="textAnimation" >
+          <h2>{i18n.text(language, i18n.MAP['contact-contact'])}</h2>
+        </AnimatedMotion>
 
       </div>
-
+     
       <div className="contact-details">
+      <AnimatedMotion animationName="contactLinksAnimation" >
         <div className="social-links">
           <div className="social-link" >
             <a href="https://github.com/sz-adam?tab=repositories" style={{ color: textColor }}><BsGithub /><span>Github</span> </a>
@@ -77,8 +80,10 @@ const Contact = (props) => {
           </div>
 
         </div>
+        </AnimatedMotion>
+      
         <div className="contact-form">
-
+        <AnimatedMotion animationName="contactFormAnimation" >
           <form onSubmit={sendEmail} ref={form}>
             <div className='error-succes'>
               {success && <div className="success">{i18n.text(language, i18n.MAP['contact-succes'])}</div>}
@@ -89,7 +94,9 @@ const Contact = (props) => {
 
             <button className="contact-button" type="submit" value="Send">{i18n.text(language, i18n.MAP['contact-sending'])}</button>
           </form>
+          </AnimatedMotion>
         </div>
+      
       </div>
     </div>
   );
