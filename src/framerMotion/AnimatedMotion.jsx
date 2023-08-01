@@ -2,6 +2,13 @@ import React, { useEffect, useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
 
 const animations = {
+  navbarAnimatio:{
+    initial: { opacity: 0, y: 15 },
+    animate: { opacity: 1, y: 0 },  
+    exit: { opacity: 0, y: -50 },   
+    transition: { duration: 1 },
+   
+  },
   homeImageAnimation: {
     initial: { opacity: 0, x: 150 },
     animate: { opacity: 1, x: 0 },

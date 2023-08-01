@@ -5,6 +5,7 @@ import '../styles/Navbar.css'
 import { LanguageContext } from '../context/LanguageContext'
 import Flag from './Flag'
 import { Link } from 'react-scroll';
+import AnimatedMotion from '../framerMotion/AnimatedMotion';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -25,6 +26,7 @@ const Navbar = () => {
 
 
   return (
+    <AnimatedMotion animationName="navbarAnimatio">
     <div className='navbar-container' >
       <div className="navbar" style={{ backgroundColor: bodybackgroundColor }}>
         <div className="logo">
@@ -64,6 +66,7 @@ const Navbar = () => {
         </div>
       </div>
     </div>
+    </AnimatedMotion>
   );
 };
 export default Navbar
