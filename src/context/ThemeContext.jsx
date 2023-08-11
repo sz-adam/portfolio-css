@@ -5,10 +5,9 @@ export const ThemeContext = createContext(null);
 
 
 export const ThemeProvider = ({ children }) => {
-   //localStorage='white'
     const [color, setColor] = useState(() => {
         const savedColor = localStorage.getItem('color')
-        return savedColor ? savedColor : 'white'
+        return savedColor ? savedColor : 'black'
     })
 
     // localStorage update

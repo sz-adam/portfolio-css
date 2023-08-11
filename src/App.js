@@ -25,33 +25,33 @@ function App() {
   }, []);
 
   useEffect(() => {
-   
-    if (localStorage.getItem("language") !== null) { 
+
+    if (localStorage.getItem("language") !== null) {
       setLanguage(localStorage.getItem("language"));
     }
     setInitialized(true);
-},[])
+  },[])
 
-if (initialized) {
-  localStorage.setItem("language", language);
-}
+  if (initialized) {
+    localStorage.setItem("language", language);
+  }
 
 
 
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
       <div style={{ backgroundColor: bodybackgroundColor, color: textColor }}>
-      {loading ? (
+        {loading ? (
           <Loading />
         ) : (
-          <>
-            <Navbar />
-            <Home />
-            <Portfolio />
-            <Skills />
-            <Contact />
+          <>           
+              <Navbar />
+              <Home />
+              <Portfolio />
+              <Skills />
+              <Contact />            
           </>
-        )}       
+        )}
       </div>
     </LanguageContext.Provider>
   );
