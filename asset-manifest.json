@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-css/static/css/main.4263835c.css",
-    "main.js": "/portfolio-css/static/js/main.7d8f4bcb.js",
+    "main.js": "/portfolio-css/static/js/main.8144eb3c.js",
     "static/media/movie.png": "/portfolio-css/static/media/movie.11d16bf9e41a6b466911.png",
     "static/media/Önéletrajz.pdf": "/portfolio-css/static/media/Önéletrajz.a9d14983c060ff7f41cf.pdf",
     "static/media/me4.png": "/portfolio-css/static/media/me4.24559cc9c89c4c1b3596.png",
@@ -18,10 +18,10 @@
     "static/media/tailwind.png": "/portfolio-css/static/media/tailwind.99e0b6fdb08924dd678c.png",
     "index.html": "/portfolio-css/index.html",
     "main.4263835c.css.map": "/portfolio-css/static/css/main.4263835c.css.map",
-    "main.7d8f4bcb.js.map": "/portfolio-css/static/js/main.7d8f4bcb.js.map"
+    "main.8144eb3c.js.map": "/portfolio-css/static/js/main.8144eb3c.js.map"
   },
   "entrypoints": [
     "static/css/main.4263835c.css",
-    "static/js/main.7d8f4bcb.js"
+    "static/js/main.8144eb3c.js"
   ]
 }
