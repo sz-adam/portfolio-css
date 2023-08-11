@@ -6,13 +6,13 @@ export const ThemeContext = createContext(null);
 
 export const ThemeProvider = ({ children }) => {
     const [color, setColor] = useState(() => {
-        const savedColor = localStorage.getItem('color')
+        const savedColor = localStorage.getItem('colors')
         return savedColor ? savedColor : 'black'
     })
 
     // localStorage update
     useEffect(() => {
-        localStorage.setItem('color', color)
+        localStorage.setItem('colors', color)
     }, [color])
 
    
