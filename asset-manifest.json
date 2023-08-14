@@ -1,13 +1,14 @@
 {
   "files": {
     "main.css": "/portfolio-css/static/css/main.4263835c.css",
-    "main.js": "/portfolio-css/static/js/main.26fc8dfe.js",
+    "main.js": "/portfolio-css/static/js/main.97539a9c.js",
     "static/media/movie.png": "/portfolio-css/static/media/movie.11d16bf9e41a6b466911.png",
     "static/media/Önéletrajz.pdf": "/portfolio-css/static/media/Önéletrajz.a9d14983c060ff7f41cf.pdf",
     "static/media/me4.png": "/portfolio-css/static/media/me4.24559cc9c89c4c1b3596.png",
     "static/media/pokemon.png": "/portfolio-css/static/media/pokemon.407d041c50d9021ee968.png",
     "static/media/angular.png": "/portfolio-css/static/media/angular.2a94d7a4ed5d0938f132.png",
     "static/media/memorygame.jpg": "/portfolio-css/static/media/memorygame.10ed648cc6086cc9dd07.jpg",
+    "static/media/crypto-home.jpg": "/portfolio-css/static/media/crypto-home.05de8315394c34a699c3.jpg",
     "static/media/angular-todo.jpg": "/portfolio-css/static/media/angular-todo.8f1bbffe131e1bd6b733.jpg",
     "static/media/scss.png": "/portfolio-css/static/media/scss.4f6d501b7b0af3eef7e2.png",
     "static/media/nodejs.png": "/portfolio-css/static/media/nodejs.c8790f181c3c3fc16f86.png",
@@ -18,10 +19,10 @@
     "static/media/tailwind.png": "/portfolio-css/static/media/tailwind.99e0b6fdb08924dd678c.png",
     "index.html": "/portfolio-css/index.html",
     "main.4263835c.css.map": "/portfolio-css/static/css/main.4263835c.css.map",
-    "main.26fc8dfe.js.map": "/portfolio-css/static/js/main.26fc8dfe.js.map"
+    "main.97539a9c.js.map": "/portfolio-css/static/js/main.97539a9c.js.map"
   },
   "entrypoints": [
     "static/css/main.4263835c.css",
-    "static/js/main.26fc8dfe.js"
+    "static/js/main.97539a9c.js"
   ]
 }
