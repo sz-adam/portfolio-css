@@ -5,6 +5,7 @@ import angularTodo from "../images/angular-todo.jpg"
 import angularpokemon from "../images/pokemon.png"
 import quiz from "../images/quiz.png"
 import movie from "../images/movie.png"
+import crypto from "../images/crypto-home.jpg"
 import { LanguageContext } from '../context/LanguageContext'
 
 import { FiGithub } from "react-icons/fi"
@@ -55,6 +56,13 @@ const Portfolio = () => {
             title: i18n.text(language, i18n.MAP['portfolio-angularPokemon']),
             link: "https://github.com/sz-adam/angular-pokemon",
             demo: "https://sz-adam.github.io/pages-pokemon/"
+        },
+        {
+            id: 6,
+            src: crypto,
+            title: i18n.text(language, i18n.MAP['portfolio-nativeCrypto']),
+            link: "https://github.com/sz-adam/react-native-cryptoApp/tree/master",
+            demo: "https://github.com/sz-adam/react-native-cryptoApp/blob/master/README.md"
         },
 
     ]

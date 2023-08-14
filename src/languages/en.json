@@ -16,6 +16,7 @@
     "portfolio-movie":"Movies/TV shows can be searched using the OMDB API. They can be saved to favorites. More information is displayed in a modal window.",
     "portfolio-angularTodo":"This is an Angular-based TODO-List for which I used PrimeNG.",
     "portfolio-angularPokemon":"This is a pokemon application, it lists 20 pokemons, you can filter them separately by type, and with the help of a pop-up window, it displays even more data about the given pokemon.",
+    "portfolio-nativeCrypto":"A Crypto application starts with a welcome screen. Then, it navigates to the Crypto component where cryptocurrencies are displayed through API calls. Users can search among them and save their favorites. Tapping on them reveals more information on a separate page. Favorites are stored in AsyncStorage, ensuring they persist even after re-entry. The data refreshes automatically.",
     "portfolio-title":"Check out my works.",
 
 

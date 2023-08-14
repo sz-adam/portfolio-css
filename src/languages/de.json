@@ -14,6 +14,7 @@
     "portfolio-movie":"Filme/Serien können mit Hilfe der OMDB-API gesucht werden. Sie können zu Favoriten hinzugefügt werden. Weitere Informationen werden in einem Modal-Fenster angezeigt.",
     "portfolio-angularTodo": "Dies ist eine Angular-basierte TODO-Liste, für die ich PrimeNG verwendet habe.",
     "portfolio-angularPokemon": "Dies ist eine Pokémon-Anwendung, die 20 Pokémon auflistet. Sie können nach ihren Typen filtern und durch ein Popup-Fenster weitere Informationen zu einem bestimmten Pokémon anzeigen.",
+    "portfolio-nativeCrypto":"Eine React Native Krypto-App. Sie listet Kryptowährungen mithilfe von APIs auf. Sie ermöglicht das Suchen und Hinzufügen von Favoriten. Es ist auch möglich, mehr Informationen über sie zu erhalten. Nach erneuter Anmeldung bleiben die Daten erhalten. ",
     "portfolio-title": "Sieh dir meine Arbeiten an.",
     "skills-title": "Diese Technologien beherrsche ich.",
     "contact-contact": "Kontaktiere mich",

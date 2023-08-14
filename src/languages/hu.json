@@ -18,6 +18,7 @@
     "portfolio-movie":"Filmeket/sorozatokat lehet keresni az omdb api használatával. Kedvencek közé lehet menteni. Modal ablakban több információt jelenít meg.",
     "portfolio-angularTodo": "Ez egy Angular alapú TODO-List amihez PrimeNG-t használtam.",
     "portfolio-angularPokemon": "Ez egy pokemon alkalmazás, 20 db pokemont listáz ki, a típusaira külön lehet szűrni és egy felugró ablak segítségével még több adatot jelenít meg az adott pokemonról.",
+    "portfolio-nativeCrypto":"Egy Crypto alkalmazás ami egy üdvözlő képernyővel indul. Majd átnavigál a Crypto componensre ahol api hivás segítségével megjelennek a cryptok. Ezek közt lehet keresni , és elmenteni a kedvencek közé. Ha több információt szeretnék tudni akkor rákkatintva külön oldalon ezek is megjelennek. A kedvenceket AsyncStorage-ba menti így újboli belépésnél is megmaradnak. Az adatok maguktól frissülnek.",
     "portfolio-title":"Nézd meg a munkáimat.",
 
     "skills-title":"Ezeket a technológiákat ismerem.",
